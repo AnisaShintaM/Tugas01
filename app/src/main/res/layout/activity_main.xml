@@ -128,4 +128,13 @@
         android:layout_below="@+id/buttonOK"
         android:text="Hasil" />
 
+    <TextView
+        android:id="@+id/textViewBisa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tilJAD"
+        android:layout_alignStart="@+id/tilJAD"
+        android:layout_below="@+id/textViewhasil"
+        android:text="Kelas" />
+
 </RelativeLayout>
