@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="id.sch.smktelkom_mlg.tugas01.xirpl1001.tugas1.MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="DATA DIRI SISWA"
+        android:textColor="#ea1ba9"
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="GANESHA OPERATION"
+        android:textColor="#29f60e"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilJAD"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2"
+        android:src="@drawable/a" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilJAD"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textViewjadwal"
+            android:layout_alignEnd="@+id/checkBoxbi"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/checkBoxbi"
+            android:hint="Jadwal"
+            android:inputType="numberSigned" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textViewnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignLeft="@+id/tilJAD"
+        android:layout_alignStart="@+id/tilJAD"
+        android:text="Nama" />
+
+    <EditText
+        android:id="@+id/editTextnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_below="@+id/textViewnama" />
+
+    <TextView
+        android:id="@+id/textViewkelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextnama"
+        android:text="Kelas" />
+
+    <CheckBox
+        android:id="@+id/checkBoxmat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewkelas"
+        android:checked="false"
+        android:text="Matematika" />
+
+    <CheckBox
+        android:id="@+id/checkBoxipa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxmat"
+        android:layout_toEndOf="@+id/tilJAD"
+        android:layout_toRightOf="@+id/tilJAD"
+        android:checked="false"
+        android:text="IPA" />
+
+    <Button
+        android:id="@+id/buttonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBoxipa"
+        android:text="OK" />
+
+    <TextView
+        android:id="@+id/textViewhasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tilJAD"
+        android:layout_alignStart="@+id/tilJAD"
+        android:layout_below="@+id/buttonOK"
+        android:text="Hasil" />
+
+</RelativeLayout>
