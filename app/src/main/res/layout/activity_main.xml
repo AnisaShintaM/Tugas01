@@ -13,7 +13,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="id.sch.smktelkom_mlg.tugas01.xirpl1001.tugas1.MainActivity">
+    tools:context="id.sch.smktelkom_mlg.tugas01.xirpl1001.tugas1.MainActivity"
+        android:background="#9cf1d0">
 
     <TextView
         android:id="@+id/textView2"
@@ -23,9 +24,11 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:text="DATA DIRI SISWA"
-        android:textColor="#ea1ba9"
-        android:textSize="26dp" />
+        android:text="PENDAFTARAN SISWA "
+        android:layout_gravity="center_horizontal"
+        android:textColor="#f20d0d"
+        android:textSize="26dp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView"
@@ -35,12 +38,32 @@
         android:layout_alignEnd="@+id/textView2"
         android:layout_alignRight="@+id/textView2"
         android:layout_below="@+id/textView2"
+        android:layout_gravity="center_horizontal"
         android:text="GANESHA OPERATION"
-        android:textColor="#29f60e"
-        android:textSize="20dp" />
+        android:textColor="#1818ef"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="285dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:text="Jln. Jaksa Agung Suprapto No.12, Kota Malang, Jawa Timur"
+            android:textSize="10dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="285dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:text="Fax (0341)766767 Telp.0341768978 ganeshaoperation@gmail.com"
+            android:textSize="10dp"
+            android:textColor="#000000"
+            android:textAlignment="center" />
 
     <ImageView
         android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tilJAD"
@@ -48,44 +71,28 @@
         android:layout_toStartOf="@+id/textView2"
         android:src="@drawable/a" />
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/tilJAD"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:visibility="gone">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/textViewjadwal"
-            android:layout_alignEnd="@+id/checkBoxbi"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignRight="@+id/checkBoxbi"
-            android:hint="Jadwal"
-            android:inputType="numberSigned" />
+            <EditText
+                android:id="@+id/editTextNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Lengkap" />
+        </android.support.design.widget.TextInputLayout>
 
-    </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/textViewnama"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView"
-        android:layout_alignLeft="@+id/tilJAD"
-        android:layout_alignStart="@+id/tilJAD"
-        android:text="Nama" />
-
-    <EditText
-        android:id="@+id/editTextnama"
-        android:layout_width="352dp"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/textView"
-        android:layout_below="@+id/textViewnama" />
+            <EditText
+                android:id="@+id/editTextTahun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tahun Kelahiran"
+                android:inputType="numberSigned" />
+        </android.support.design.widget.TextInputLayout>
 
     <TextView
         android:id="@+id/textViewkelas"
@@ -175,10 +182,11 @@
         android:id="@+id/buttonOK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+        android:layout_alignParentBottom="true"
             android:layout_toEndOf="@+id/tilJAD"
             android:layout_toRightOf="@+id/tilJAD"
-        android:text="OK" />
+            android:layout_gravity="center_horizontal"
+        android:text="DAFTAR" />
 
     <TextView
         android:id="@+id/textViewhasil"
@@ -187,14 +195,39 @@
         android:layout_above="@+id/textViewBisa"
         android:layout_alignLeft="@+id/textViewBisa"
         android:layout_alignStart="@+id/textViewBisa"
-        android:text="Hasil" />
+        android:layout_gravity="center_horizontal"
+        android:text=" " />
+
+        <TextView
+            android:id="@+id/textViewhasil2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textViewBisa"
+            android:layout_alignLeft="@+id/textViewBisa"
+            android:layout_alignStart="@+id/textViewBisa"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/textViewhasil3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textViewBisa"
+            android:layout_alignLeft="@+id/textViewBisa"
+            android:layout_alignStart="@+id/textViewBisa"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/textViewhasil4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textViewBisa"
+            android:layout_alignLeft="@+id/textViewBisa"
+            android:layout_alignStart="@+id/textViewBisa"
+            android:layout_gravity="center_horizontal" />
 
     <TextView
-        android:id="@+id/textViewBisa"
+        android:id="@+id/textViewhasil5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mapel" />
-
+        android:layout_gravity="center_horizontal"/>
 
     </LinearLayout>
 </ScrollView>
