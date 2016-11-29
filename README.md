@@ -15,8 +15,13 @@ Aplikasi ini saya buat bagi siswa yang ingin mengikuti pembelajaran di bimbingan
 maka akan memudahkan bagi para siswa yang ingin mendaftar tetapi tidak memiliki waktu untuk pergi ke tempat GO secara langsung.
 
 DETEKSI KESALAHAN : <br>
-1. Apabila tidak menginputkan nama maka akan diberitahu
-2. Apabila tidak menginputkan nama lebih 3 huruf maka akan diberitahu
+1. Apabila user tidak menginputkan nama maka akan muncul sebuah pemberitahuan yang mengarah pada edit text isian nama
+2. Apabila user menginputkan nama kurang dari 3 huruf maka akan muncul sebuah pemberitahuan bahwa nama harus lebih dari 3 huruf dan kemudian diarahkan ke edit text isian nama
+3. Apabila user tidak menginputkan tahun lahir maka akan muncul pemberitahuan dan mengarah pada edit text isian tahun lahir
+4. Apabila user menginputkan tahun bukan dengan format yyyy (misal 2000) maka hakan muncul sebuah pemberitahuan bahwa user harus menginputkan tahun kelahiran dengan format yyyy atau 4 digit angka dan kemudian diarahkan ke edit text isian nama
+5. Apabila user belum memilih kelas maka text view yang muncul adalah Pilih kelas Anda dan jika sudah memilih kelas maka berubah menjadi Kelas (jumlah kelas yang terpilih)
+6. Apablia user belum memilih jenis kelamin maka pada text view hasil yang terletak di bawah button akan muncul pemberitahuan bahwa harus menginputkan jenis kelamin
+
 
 B. LINK DOWNLOAD
 
@@ -33,6 +38,6 @@ SCREENSHOOT <br>
 ![Screenshot 4] (https://s14.postimg.org/amx0r3txd/Capture.jpg)
 
 LINK APK
-<p> https://drive.google.com/file/d/0B_pX3i9xpu-AbVJLQldMOEZkaUU/view?usp=sharing </p>
+<p> https://drive.google.com/a/smktelkom-mlg.sch.id/file/d/0B9DYVF9GOXNxeHlMLW9ObE1iWU0/view?usp=sharing </p>
 
 
